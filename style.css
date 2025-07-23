@@ -82,250 +82,253 @@
 }
 
 /* login section */
-.vk-auth-heading{
-	text-align: center;
-	font-size: 2rem;
-	font-weight: bold;
-	color: #000;
-	margin-bottom: 2rem;
+.vk-auth-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 2rem;
 }
 
-.vk-auth-heading-span{
-	color: #12d643;
+.vk-auth-heading-span {
+  color: #12d643;
 }
 
-.vk-auth-text-signin{
-	color: #000;
+.vk-auth-text-signin {
+  color: #000;
 }
 
-.vk-auth-text-signin-white{
-	color: #fff;
+.vk-auth-text-signin-white {
+  color: #fff;
 }
 
 .vk-auth-wrapper {
-	font-family: 'Montserrat', sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	min-height: 100vh;
-	background: #f6f5f7;
-	position: relative;
-	z-index: 1;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f6f5f7;
+  position: relative;
+  z-index: 1;
 }
 
 .vk-auth-wrapper h1 {
-	font-weight: bold;
-	margin: 0;
+  font-weight: bold;
+  margin: 0;
 }
 
 .vk-auth-wrapper p {
-	font-size: 14px;
-	font-weight: 100;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	margin: 20px 0 30px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
 }
 
 .vk-auth-wrapper a {
-	color: #333;
-	font-size: 14px;
-	text-decoration: none;
-	margin: 15px 0;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
 }
 
 .vk-auth-wrapper button {
-	border-radius: 20px;
-	border: 1px solid #7f4f24;
-	background-color: #38b000;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-	cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #7f4f24;
+  background-color: #38b000;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
 }
 
 .vk-auth-wrapper button:active {
-	transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .vk-auth-wrapper button:focus {
-	outline: none;
+  outline: none;
 }
 
 .vk-auth-wrapper .vk-auth-ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+  background-color: transparent;
+  border-color: #ffffff;
 }
 
 .vk-auth-container {
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-				0 10px 10px rgba(0,0,0,0.22);
-	position: relative;
-	overflow: hidden;
-	width: 768px;
-	max-width: 100%;
-	min-height: 480px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
 }
 
 .vk-auth-form-container {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	transition: all 0.6s ease-in-out;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
 }
 
 .vk-auth-sign-in-container {
-	left: 0;
-	width: 50%;
-	z-index: 2;
+  left: 0;
+  width: 50%;
+  z-index: 2;
 }
 
 .vk-auth-container.vk-auth-right-panel-active .vk-auth-sign-in-container {
-	transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .vk-auth-sign-up-container {
-	left: 0;
-	width: 50%;
-	opacity: 0;
-	z-index: 1;
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
 }
 
 .vk-auth-container.vk-auth-right-panel-active .vk-auth-sign-up-container {
-	transform: translateX(100%);
-	opacity: 1;
-	z-index: 5;
-	animation: vk-auth-show 0.6s;
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: vk-auth-show 0.6s;
 }
 
 @keyframes vk-auth-show {
-	0%, 49.99% {
-		opacity: 0;
-		z-index: 1;
-	}
-	50%, 100% {
-		opacity: 1;
-		z-index: 5;
-	}
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
 }
 
 .vk-auth-form-container form {
-	background-color: #FFFFFF;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 50px;
-	height: 100%;
-	text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
 }
 
 .vk-auth-form-container input {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
 }
 
 .vk-auth-overlay-container {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	transition: transform 0.6s ease-in-out;
-	z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
 }
 
 .vk-auth-container.vk-auth-right-panel-active .vk-auth-overlay-container {
-	transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .vk-auth-overlay {
-	background: linear-gradient(to right, #70e000, #55a630);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0 0;
-	color: #FFFFFF;
-	position: relative;
-	left: -100%;
-	height: 100%;
-	width: 200%;
-	transform: translateX(0);
-	transition: transform 0.6s ease-in-out;
+  background: linear-gradient(to right, #70e000, #55a630);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
 }
 
 .vk-auth-container.vk-auth-right-panel-active .vk-auth-overlay {
-	transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 .vk-auth-overlay-panel {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 40px;
-	text-align: center;
-	top: 0;
-	height: 100%;
-	width: 50%;
-	transform: translateX(0);
-	transition: transform 0.6s ease-in-out;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
 }
 
 .vk-auth-overlay-left {
-	transform: translateX(-20%);
+  transform: translateX(-20%);
 }
 
 .vk-auth-container.vk-auth-right-panel-active .vk-auth-overlay-left {
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
 .vk-auth-overlay-right {
-	right: 0;
-	transform: translateX(0);
+  right: 0;
+  transform: translateX(0);
 }
 
 .vk-auth-container.vk-auth-right-panel-active .vk-auth-overlay-right {
-	transform: translateX(20%);
+  transform: translateX(20%);
 }
 
 .vk-auth-social-container {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 .vk-auth-social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
 }
 
 .vk-auth-footer {
-	background-color: #222;
-	color: #fff;
-	font-size: 14px;
-	text-align: center;
-	padding: 10px 0;
-	width: 100%;
-	position: relative;
-	bottom: 0;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
 }
 
 .vk-auth-footer a {
-	color: #3c97bf;
-	text-decoration: none;
+  color: #3c97bf;
+  text-decoration: none;
 }
+
+/* login section ends */

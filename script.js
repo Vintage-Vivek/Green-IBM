@@ -1,3 +1,5 @@
+// login section
+
 const signUpButton = document.getElementById("vk-auth-signUp");
 const signInButton = document.getElementById("vk-auth-signIn");
 const container = document.getElementById("vk-auth-container");
@@ -9,3 +11,5 @@ signUpButton.addEventListener("click", () => {
 signInButton.addEventListener("click", () => {
   container.classList.remove("vk-auth-right-panel-active");
 });
+
+// login ends
