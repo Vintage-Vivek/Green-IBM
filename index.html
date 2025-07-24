@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Green Revolution</title>
-  <link rel="stylesheet" href="green-revolution.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">🌱 logo</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-  </div>
-</nav>
-  <!--Hero section-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Revolution</title>
+    <link rel="stylesheet" href="green-revolution.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">🌱 logo</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+    <!--Hero section-->
     <section class="section-a">
-        <div class="section-inner">
-            <h4>Upcoming Launch</h4>
-            <h2>o2 Mission</h2>
-            <a href="#" class="btn">
-                <div class="hover"></div>
-                <span>Rewatch</span>
-            </a>
-        </div>
+      <div class="section-inner">
+        <h4>Upcoming Launch</h4>
+        <h2>o2 Mission</h2>
+        <a href="#" class="btn">
+          <div class="hover"></div>
+          <span>Rewatch</span>
+        </a>
+      </div>
     </section>
     <!-- login section -->
     <div class="vk-auth-wrapper">
-      <div><h1 class="vk-auth-heading">Welcome To Team <span class="vk-auth-heading-span">Green</span></h1></div>
-      <br>
+      <div>
+        <h1 class="vk-auth-heading">
+          Welcome To Team <span class="vk-auth-heading-span">Green</span>
+        </h1>
+      </div>
+      <br />
       <div class="vk-auth-container" id="vk-auth-container">
         <div class="vk-auth-form-container vk-auth-sign-up-container">
           <form action="#">
             <h1 class="vk-auth-text-signin">Create Account</h1>
-            
             <span>or use your email for registration</span>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <button>Sign Up</button>
+            <button
+              type="button"
+              class="vk-auth-mobile-switch-btn"
+              id="vk-auth-mobile-signIn"
+            >
+              Already a planter? Sign In
+            </button>
           </form>
         </div>
         <div class="vk-auth-form-container vk-auth-sign-in-container">
           <form action="#">
             <h1 class="vk-auth-text-signin">Sign in</h1>
-            
             <span>or use your account</span>
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <a href="#">Forgot your password?</a>
             <button>Sign In</button>
+            <button
+              type="button"
+              class="vk-auth-mobile-switch-btn"
+              id="vk-auth-mobile-signUp"
+            >
+              New to tree planting? Sign Up
+            </button>
           </form>
         </div>
         <div class="vk-auth-overlay-container">
@@ -73,8 +89,9 @@
           </div>
         </div>
       </div>
+    </div>
     <!-- login ends -->
-    
-  <script src="script.js"></script>
-</body>
-</html> 
+
+    <script src="script.js"></script>
+  </body>
+</html>
