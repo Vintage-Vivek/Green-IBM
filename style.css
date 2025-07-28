@@ -331,6 +331,9 @@
   text-decoration: none;
 }
 
+/* ============================= */
+/*           FOOTER             */
+/* ============================= */
 .footer {
   background-color: #1c1c1c;
   color: #ffffff;
@@ -377,15 +380,27 @@
   color: #00e676;
 }
 
-/* Family Tree Section */
-.family-tree-section {
+/* Bottom Footer */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
   margin-top: 40px;
+  color: #aaa;
+}
+
+/* ============================= */
+/*        FAMILY TREE           */
+/* ============================= */
+.family-tree-section {
+  margin-top: 60px;
   text-align: center;
 }
 
 .family-tree-section h2 {
   color: #00e676;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 28px;
 }
 
 .family-tree {
@@ -410,34 +425,6 @@
 .member p {
   margin-top: 10px;
   color: #fff;
-}
-
-/* Bottom Footer */
-.footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  margin-top: 40px;
-  color: #aaa;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-.family-tree-section {
-  margin-top: 60px;
-  text-align: center;
-}
-
-.family-tree-section h2 {
-  color: #00e676;
-  margin-bottom: 40px;
-  font-size: 28px;
 }
 
 /* Tree structure */
@@ -524,7 +511,6 @@
   margin-bottom: 8px;
 }
 
-/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -545,8 +531,14 @@
   }
 }
 
-/* Responsive tree */
+/* Responsive family tree */
 @media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .tree, .tree ul {
     flex-direction: column;
     align-items: center;
@@ -561,7 +553,7 @@
 
 .footer-familytree-section {
   padding: 60px 20px;
-  background-color:  #131a15;
+  background-color: #131a15;
   color: #fff;
   text-align: center;
 }
@@ -580,7 +572,7 @@
 }
 
 .tree-img {
-  flex:1;
+  flex: 1;
   width: 100%;
   height: auto;
   display: block;
@@ -611,7 +603,6 @@
   margin: 0;
 }
 
-/* Fade animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -623,7 +614,6 @@
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   .member-box {
     width: 80px;
@@ -639,5 +629,112 @@
   }
 }
 
+/* ============================= */
+/*       VK AUTH SECTION        */
+/* ============================= */
+.vk-auth-mobile-switch-btn {
+  margin-top: 15px;
+  background-color: #38b000;
+  border-color: #38b000;
+  color: #ffffff;
+  display: none;
+  width: auto;
+  min-width: unset;
+}
 
-/* login section ends */
+@media (max-width: 768px) {
+  .vk-auth-container {
+    max-width: 90%;
+    min-height: 550px;
+  }
+
+  .vk-auth-form-container {
+    width: 100%;
+    top: auto;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .vk-auth-sign-in-container {
+    left: 0;
+    z-index: 2;
+  }
+
+  .vk-auth-sign-up-container {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    animation: none;
+  }
+
+  .vk-auth-container.vk-auth-right-panel-active .vk-auth-sign-in-container {
+    transform: translateX(0);
+  }
+
+  .vk-auth-container.vk-auth-right-panel-active .vk-auth-sign-up-container {
+    transform: translateX(0);
+  }
+
+  .vk-auth-overlay-container {
+    display: none;
+  }
+
+  .vk-auth-container.vk-auth-right-panel-active .vk-auth-sign-up-container,
+  .vk-auth-container:not(.vk-auth-right-panel-active)
+    .vk-auth-sign-in-container {
+    display: block;
+  }
+
+  .vk-auth-container.vk-auth-right-panel-active .vk-auth-sign-in-container,
+  .vk-auth-container:not(.vk-auth-right-panel-active)
+    .vk-auth-sign-up-container {
+    display: none;
+  }
+
+  .vk-auth-wrapper p {
+    margin: 10px 0;
+  }
+
+  .vk-auth-overlay-panel {
+    position: static;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .vk-auth-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .vk-auth-mobile-switch-btn {
+    display: block;
+  }
+
+  .vk-auth-overlay-container .vk-auth-ghost {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .vk-auth-wrapper button {
+    padding: 10px 30px;
+    font-size: 10px;
+  }
+
+  .vk-auth-form-container form {
+    padding: 0 30px;
+  }
+
+  .vk-auth-wrapper p {
+    font-size: 12px;
+  }
+
+  .vk-auth-wrapper a {
+    font-size: 12px;
+  }
+
+  .vk-auth-mobile-switch-btn {
+    font-size: 11px;
+    padding: 10px 20px;
+  }
+}

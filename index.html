@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Green Revolution</title>
-  <link rel="stylesheet" href="green-revolution.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">🌱 logo</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-  </div>
-</nav>
-  <!--Hero section-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Revolution</title>
+    <link rel="stylesheet" href="green-revolution.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">🌱 logo</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+    <!--Hero section-->
     <section class="section-a">
-        <div class="section-inner">
-            <h4>Upcoming Launch</h4>
-            <h2>o2 Mission</h2>
-            <a href="#" class="btn">
-                <div class="hover"></div>
-                <span>Rewatch</span>
-            </a>
-        </div>
+      <div class="section-inner">
+        <h4>Upcoming Launch</h4>
+        <h2>o2 Mission</h2>
+        <a href="#" class="btn">
+          <div class="hover"></div>
+          <span>Rewatch</span>
+        </a>
+      </div>
     </section>
     <!-- login section -->
     <div class="vk-auth-wrapper">
-      <div><h1 class="vk-auth-heading">Welcome To Team <span class="vk-auth-heading-span">Green</span></h1></div>
-      <br>
+      <div>
+        <h1 class="vk-auth-heading">
+          Welcome To Team <span class="vk-auth-heading-span">Green</span>
+        </h1>
+      </div>
+      <br />
       <div class="vk-auth-container" id="vk-auth-container">
         <div class="vk-auth-form-container vk-auth-sign-up-container">
           <form action="#">
             <h1 class="vk-auth-text-signin">Create Account</h1>
-            
             <span>or use your email for registration</span>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <button>Sign Up</button>
+            <button type="button" onclick="window.location.href='Profile.html'">Sign Up</button>
+            <button
+              type="button"
+              class="vk-auth-mobile-switch-btn"
+              id="vk-auth-mobile-signIn"
+            >
+              Already a planter? Sign In
+            </button>
           </form>
         </div>
         <div class="vk-auth-form-container vk-auth-sign-in-container">
           <form action="#">
             <h1 class="vk-auth-text-signin">Sign in</h1>
-            
             <span>or use your account</span>
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <a href="#">Forgot your password?</a>
-            <button>Sign In</button>
+            <button type="button" onclick="window.location.href='Profile.html'">Sign In</button>
+            <button
+              type="button"
+              class="vk-auth-mobile-switch-btn"
+              id="vk-auth-mobile-signUp"
+            >
+              New to tree planting? Sign Up
+            </button>
           </form>
         </div>
         <div class="vk-auth-overlay-container">
@@ -73,90 +89,89 @@
           </div>
         </div>
       </div>
-
+    </div>
     <!-- login ends -->
-    
-  <script src="script.js"></script>
-  <!-- Font Awesome CDN for icons -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
 
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-about">
-      <h2>Green Revolution</h2>
-      <p>Your trusted source for tree plantations and eco-friendly living. Join the movement, plant a future.</p>
-    </div>
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <div class="footer-links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2>Green Revolution</h2>
+          <p>Your trusted source for tree plantations and eco-friendly living. Join the movement, plant a future.</p>
+        </div>
 
-    <div class="footer-services">
-      <h3>Our Services</h3>
-      <ul>
-        <li>Tree Plantation</li>
-        <li>Eco Consultation</li>
-        <li>Gift a Tree</li>
-        <li>Bulk Orders</li>
-      </ul>
-    </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
 
-    <div class="footer-social">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="footer-services">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Tree Plantation</li>
+            <li>Eco Consultation</li>
+            <li>Gift a Tree</li>
+            <li>Bulk Orders</li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="footer-familytree-section">
-  <h2>🌳 Our Green Team</h2>
-  <div class="familytree-container">
-    <img src="img/tree.png" alt="Family Tree" class="tree-img" />
 
-    <!-- Team members -->
-    <div class="member-box" style="top: 10%; left: 45%;">
-      <img src="img/mem1.jpg" alt="Member 1">
-      <p>Vivek Bhardwaj</p>
-    </div>
-    <div class="member-box" style="top: 30%; left: 20%;">
-      <img src="img/deeptii.jpg" alt="Member 2">
-      <p>Deepti Gupta</p>
-    </div>
-    <div class="member-box" style="top: 30%; left: 70%;">
-      <img src="img/yana.jpg" alt="Member 3">
-      <p>Yana Malhotra</p>
-    </div>
-    <div class="member-box" style="top: 55%; left: 15%;">
-      <img src="img/member4.jpg" alt="Member 4">
-      <p>Vritti Garg</p>
-    </div>
-    <div class="member-box" style="top: 55%; left: 75%;">
-      <img src="img/jeevidha.jpg" alt="Member 5">
-      <p>Jeevidha Arora</p>
-    </div>
-    <div class="member-box" style="top: 70%; left: 45%;">
-      <img src="img/member6.jpg" alt="Member 6">
-      <p>Kanishk Vig</p>
-    </div>
-  </div>
-</div>
+      <!-- Family Tree Section -->
+      <div class="footer-familytree-section">
+        <h2>🌳 Our Green Team</h2>
+        <div class="familytree-container">
+          <img src="img/tree.png" alt="Family Tree" class="tree-img" />
 
-</div>
+          <div class="member-box" style="top: 10%; left: 45%;">
+            <img src="img/mem1.jpg" alt="Member 1">
+            <p>Vivek Bhardwaj</p>
+          </div>
+          <div class="member-box" style="top: 30%; left: 20%;">
+            <img src="img/deeptii.jpg" alt="Member 2">
+            <p>Deepti Gupta</p>
+          </div>
+          <div class="member-box" style="top: 30%; left: 70%;">
+            <img src="img/yana.jpg" alt="Member 3">
+            <p>Yana Malhotra</p>
+          </div>
+          <div class="member-box" style="top: 55%; left: 15%;">
+            <img src="img/member4.jpg" alt="Member 4">
+            <p>Vritti Garg</p>
+          </div>
+          <div class="member-box" style="top: 55%; left: 75%;">
+            <img src="img/jeevidha.jpg" alt="Member 5">
+            <p>Jeevidha Arora</p>
+          </div>
+          <div class="member-box" style="top: 70%; left: 45%;">
+            <img src="img/member6.jpg" alt="Member 6">
+            <p>Kanishk Vig</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  
-</footer>
-
-</body>
-</html> 
+    <!-- JS Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
