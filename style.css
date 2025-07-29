@@ -746,6 +746,8 @@
     background-color: #def3bd;
     padding: 3rem 1.5rem;
     color: #006400;
+    min-height: 100vh;
+    height: auto;
 }
 
 @media (min-width: 768px) {
@@ -802,7 +804,7 @@
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1), 0 5px 10px rgba(0,0,0,0.05);
     flex: 1;
-    min-width: 300px; /* Ensures cards don't get too squished */
+    min-width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -814,4 +816,4 @@
 .about-card h1 {
     margin-bottom: 1.5rem;
 }
-/* about section ends*/
+/* about section ends */
