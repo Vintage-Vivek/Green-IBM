@@ -331,6 +331,307 @@
   text-decoration: none;
 }
 
+/* ============================= */
+/*           FOOTER             */
+/* ============================= */
+.footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer h2, .footer h3 {
+  color: #00e676;
+}
+
+.footer-about, .footer-links, .footer-services, .footer-social {
+  flex: 1 1 200px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #00e676;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ccc;
+}
+
+.social-icons a:hover {
+  color: #00e676;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  color: #aaa;
+}
+
+/* ============================= */
+/*        FAMILY TREE           */
+/* ============================= */
+.family-tree-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.family-tree-section h2 {
+  color: #00e676;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.family-tree {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00e676;
+}
+
+.member p {
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Tree structure */
+.tree-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 30px;
+}
+
+.tree,
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.tree li {
+  text-align: center;
+  position: relative;
+  padding: 20px 10px 0 10px;
+}
+
+/* Connectors */
+.tree li::before,
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #00e676;
+  width: 50%;
+  height: 20px;
+}
+
+.tree li::before {
+  right: 50%;
+  border-right: 2px solid #00e676;
+}
+
+.tree li::after {
+  left: 50%;
+  border-left: 2px solid #00e676;
+}
+
+/* Remove connectors from root */
+.tree > li::before,
+.tree > li::after {
+  display: none;
+}
+
+/* Connector down to children */
+.tree ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #00e676;
+  height: 20px;
+}
+
+/* Member box style */
+.member-box {
+  display: inline-block;
+  padding: 10px;
+  background-color: #2b2b2b;
+  border: 2px solid #00e676;
+  border-radius: 10px;
+  color: #fff;
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.member-box:hover {
+  transform: scale(1.05);
+}
+
+.member-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+.fade-in:nth-child(4) { animation-delay: 0.8s; }
+.fade-in:nth-child(5) { animation-delay: 1s; }
+.fade-in:nth-child(6) { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive family tree */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tree, .tree ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tree li::before,
+  .tree li::after,
+  .tree ul::before {
+    display: none;
+  }
+}
+
+.footer-familytree-section {
+  padding: 60px 20px;
+  background-color: #131a15;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-familytree-section h2 {
+  font-size: 30px;
+  color: #00e676;
+  margin-bottom: 30px;
+}
+
+.familytree-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tree-img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.member-box {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  background-color: #333;
+  border: 2px solid #00e676;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 10px #00e67655;
+  animation: fadeIn 1s ease-in;
+}
+
+.member-box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.member-box p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .member-box {
+    width: 80px;
+  }
+
+  .member-box img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .member-box p {
+    font-size: 12px;
+  }
+}
+
+/* ============================= */
+/*       VK AUTH SECTION        */
+/* ============================= */
 .vk-auth-mobile-switch-btn {
   margin-top: 15px;
   background-color: #38b000;
