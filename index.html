@@ -2,13 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Green Revolution</title>
-    <link rel="icon" href="img\tree_icon.png" type="image/jpeg">
+    <link rel="icon" href="img/tree_icon.png" type="image/png" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="green-revolution.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-papG4f1Q6F3zb6CbDkS1hcX+qfcFGbNrNrE/pblE6+1HcrOfSPe3Vw0V+R8kW3bE0Qvjw2uL8EUJdnwLLPe9gA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">🌱 logo</div>
@@ -21,7 +36,8 @@
         <div class="hamburger" id="hamburger">&#9776;</div>
       </div>
     </nav>
-    <!--Hero section-->
+
+    <!-- Hero section -->
     <section class="section-a">
       <div class="section-inner">
         <h4>Upcoming Launch</h4>
@@ -32,15 +48,16 @@
         </a>
       </div>
     </section>
-    <!-- login section -->
+
+    <!-- Authentication modal -->
     <div class="vk-auth-wrapper">
       <div>
         <h1 class="vk-auth-heading">
           Welcome To Team <span class="vk-auth-heading-span">Green</span>
         </h1>
       </div>
-      <br />
       <div class="vk-auth-container" id="vk-auth-container">
+        <!-- Sign Up -->
         <div class="vk-auth-form-container vk-auth-sign-up-container">
           <form action="#">
             <h1 class="vk-auth-text-signin">Create Account</h1>
@@ -48,7 +65,12 @@
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <button type="button" onclick="window.location.href='Profile.html'">Sign Up</button>
+            <button
+              type="button"
+              onclick="window.location.href='Profile.html'"
+            >
+              Sign Up
+            </button>
             <button
               type="button"
               class="vk-auth-mobile-switch-btn"
@@ -58,6 +80,8 @@
             </button>
           </form>
         </div>
+
+        <!-- Sign In -->
         <div class="vk-auth-form-container vk-auth-sign-in-container">
           <form action="#">
             <h1 class="vk-auth-text-signin">Sign in</h1>
@@ -65,7 +89,12 @@
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <a href="#">Forgot your password?</a>
-            <button type="button" onclick="window.location.href='Profile.html'">Sign In</button>
+            <button
+              type="button"
+              onclick="window.location.href='Profile.html'"
+            >
+              Sign In
+            </button>
             <button
               type="button"
               class="vk-auth-mobile-switch-btn"
@@ -75,36 +104,105 @@
             </button>
           </form>
         </div>
+
+        <!-- Overlay panels -->
         <div class="vk-auth-overlay-container">
           <div class="vk-auth-overlay">
             <div class="vk-auth-overlay-panel vk-auth-overlay-left">
               <h1 class="vk-auth-text-signin-white">Welcome Back!</h1>
               <p>Already a planter? Log in to your account</p>
-              <button class="vk-auth-ghost" id="vk-auth-signIn">Sign In</button>
+              <button class="vk-auth-ghost" id="vk-auth-signIn">
+                Sign In
+              </button>
             </div>
             <div class="vk-auth-overlay-panel vk-auth-overlay-right">
-              <h1 class="vk-auth-text-signin-white">Hello, TreeSapiens!</h1>
+              <h1 class="vk-auth-text-signin-white">
+                Hello, TreeSapiens!
+              </h1>
               <p>New to tree planting? Sign up and get started</p>
-              <button class="vk-auth-ghost" id="vk-auth-signUp">Sign Up</button>
+              <button class="vk-auth-ghost" id="vk-auth-signUp">
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- login ends -->
+    <!-- /Authentication modal -->
 
-    <!-- Font Awesome CDN for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <!-- About section -->
+    <section class="about-section-container">
+      <div class="about-section-inner-wrapper">
+        <div class="about-team-green">
+          <h1>🌱 About Team Green</h1>
+          <p>
+            At Team Green, we believe change begins with a single seed —
+            planted not in the ground, but within our minds.
+          </p>
+          <p>
+            We are a global initiative dedicated to combating climate change
+            through reforestation, community action, and environmental
+            education. From small urban sapling drives to large‑scale
+            restoration projects, our mission is simple: bring people and
+            nature back together.
+          </p>
+        </div>
 
-    <!-- Footer Section -->
+        <div class="about-cards-container">
+          <div class="about-card what-we-do">
+            <h1>What We Do</h1>
+            <dl>
+              <dt>Tree Planting Campaigns</dt>
+              <dd>
+                We organize local and international tree‑planting drives in
+                collaboration with schools, NGOs, and municipalities.
+              </dd>
+
+              <dt>Eco Education</dt>
+              <dd>
+                We develop learning resources and content to raise awareness
+                on sustainability, climate science, and personal impact.
+              </dd>
+
+              <dt>Community Building</dt>
+              <dd>
+                Our platform connects changemakers, learners, and doers who
+                want to make a difference — together.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="about-card why-it-matters">
+            <h1>Why It Matters</h1>
+            <p>
+              Climate change is not a distant threat — it's here. We’re facing
+              rising temperatures, disappearing forests, degraded soil,
+              polluted air, and dying ecosystems — all accelerating faster
+              than ever before.
+            </p>
+            <p>
+              Team Green offers a simple, powerful solution. And together, we
+              can reclaim our forests, restore ecosystems, and reshape the
+              future.
+            </p>
+            <p>
+              Because every tree planted is a breath of fresh air. Every
+              person empowered is a step forward.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-about">
           <h2>Green Revolution</h2>
-          <p>Your trusted source for tree plantations and eco-friendly living. Join the movement, plant a future.</p>
+          <p>
+            Your trusted source for tree plantations and eco‑friendly
+            living. Join the movement, plant a future.
+          </p>
         </div>
 
         <div class="footer-links">
@@ -138,41 +236,45 @@
         </div>
       </div>
 
-      <!-- Family Tree Section -->
+      <!-- Our Team “Family Tree” -->
       <div class="footer-familytree-section">
         <h2>🌳 Our Green Team</h2>
         <div class="familytree-container">
-          <img src="img/tree.png" alt="Family Tree" class="tree-img" />
+          <img
+            src="img/tree.png"
+            alt="Family Tree"
+            class="tree-img"
+          />
 
-          <div class="member-box" style="top: 10%; left: 45%;">
-            <img src="img\Vivek.jpeg" alt="Member 1">
+          <div class="member-box" style="top: 10%; left: 45%">
+            <img src="img/Vivek.jpeg" alt="Vivek Bhardwaj" />
             <p>Vivek Bhardwaj</p>
           </div>
-          <div class="member-box" style="top: 30%; left: 20%;">
-            <img src="img/deeptii.jpg" alt="Member 2">
+          <div class="member-box" style="top: 30%; left: 20%">
+            <img src="img/deeptii.jpg" alt="Deepti Gupta" />
             <p>Deepti Gupta</p>
           </div>
-          <div class="member-box" style="top: 30%; left: 70%;">
-            <img src="img/yana.jpg" alt="Member 3">
+          <div class="member-box" style="top: 30%; left: 70%">
+            <img src="img/yana.jpg" alt="Yana Malhotra" />
             <p>Yana Malhotra</p>
           </div>
-          <div class="member-box" style="top: 55%; left: 15%;">
-            <img src="img/member4.jpg" alt="Member 4">
+          <div class="member-box" style="top: 55%; left: 15%">
+            <img src="img/member4.jpg" alt="Vritti Garg" />
             <p>Vritti Garg</p>
           </div>
-          <div class="member-box" style="top: 55%; left: 75%;">
-            <img src="img/jeevidha.jpg" alt="Member 5">
+          <div class="member-box" style="top: 55%; left: 75%">
+            <img src="img/jeevidha.jpg" alt="Jeevidha Arora" />
             <p>Jeevidha Arora</p>
           </div>
-          <div class="member-box" style="top: 70%; left: 45%;">
-            <img src="img/member6.jpg" alt="Member 6">
+          <div class="member-box" style="top: 70%; left: 45%">
+            <img src="img/member6.jpg" alt="Kanishk" />
             <p>Kanishk</p>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- JS Script -->
-    <script src="script.js"></script>
+    <!-- JS -->
+    <script src="script.js" defer></script>
   </body>
 </html>
